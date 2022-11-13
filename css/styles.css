@@ -7,7 +7,7 @@
     --primary-black-color: #000000;
     --button-second-color: #F5F4FA;
     --footer-main-color: rgda(255, 255, 255, 0.6);
-    --bgr-footer: ##2F303A;
+    --bgr-footer: #2F303A;
   }
 
 body {
@@ -15,6 +15,43 @@ body {
     color: var(--primary-text-color);
 }
 /* Style Studio */
+
+li {
+  list-style: none;
+}
+
+.title-one {
+  color: var(--primary-white-color);
+  background-color: var(--bgr-footer);
+}
+.title-invisible{
+  color: transparent;
+}
+
+.title-benefits{
+  color: var(--primary-text-color);
+}
+
+.text-benefits {
+  color: var(--accent-color);
+}
+
+.title-work{
+  color: var(--primary-text-color);
+}
+
+.command {
+  color: var(--primary-text-color);
+}
+
+.title-command {
+  color: var(--primary-text-color);
+}
+
+.filter-command {
+  color: var(--accent-color);
+}
+
 
 /* Site nav */
 .site-nav .link {
@@ -44,7 +81,7 @@ body {
   /* Style Portfolio */
 
   .filter{
-    color: var(--primary-white-color);
+    color: var(--primary-text-color);
     background-color: var(--button-second-color);
   }
   .filter.active {
@@ -52,6 +89,13 @@ body {
     background-color: var(--button-link-color);
   }
   
+  .title-project{
+    color: var(--primary-text-color);
+  }
+  .filter-project{
+    color: var(--accent-color);
+  }
+
   /* Footer */
     .footer-position {
       color: var(--primary-white-color);
