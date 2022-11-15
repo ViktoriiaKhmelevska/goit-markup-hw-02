@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
+    color: var(--accent-color);
 }
 /* Style Studio */
 
@@ -56,18 +56,23 @@ li {
 /* Site nav */
 .site-nav .link {
     color: var(--primary-text-color);
+    text-decoration: none;
   }
   
   .site-nav .link:hover,
   .site-nav .link:focus {
     color: var(--button-link-color);
+    text-decoration: none;
   }
   
   .site-nav .link.current {
     color: var(--button-link-color);
+    text-decoration: none;
   }
+
   .site-nav-contact {
     color: var(--accent-color);
+    text-decoration: none;
   }
   .site-nav-contact:hover, 
   .site-nav-contact:focus {
@@ -76,6 +81,12 @@ li {
 
   .logo {
     color: var(--primary-black-color);
+    text-decoration: none;
+  }
+
+  .web {
+    color: var(--button-link-color);
+   ;
   }
 
   /* Style Portfolio */
@@ -103,7 +114,15 @@ li {
     }
     .footer-link {
       color: var(--footer-main-color);
-      background-color: var(--bgr-footer);
+      /* background-color: var(--bgr-footer); */
     }
-  
+
+    .address {
+      text-decoration: none;
+      border: none;
+    }
+    
+
+    
+    
 /* list-style: none;*/
