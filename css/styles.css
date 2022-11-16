@@ -13,6 +13,7 @@
 body {
     background-color: var(--primary-white-color);
     color: var(--accent-color);
+    font-family: Roboto, sans-serif;
 }
 /* Style Studio */
 
@@ -22,40 +23,76 @@ li {
 
 .title-one {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
   background-color: var(--bgr-footer);
 }
+
 .title-invisible{
   color: transparent;
 }
 
 .title-benefits{
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .text-benefits {
   color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .title-work{
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17x;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .command {
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .title-command {
   color: var(--primary-text-color);
-}
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
 
 .filter-command {
   color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 
 /* Site nav */
 .site-nav .link {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
   }
   
@@ -72,6 +109,10 @@ li {
 
   .site-nav-contact {
     color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
   }
   .site-nav-contact:hover, 
@@ -81,12 +122,15 @@ li {
 
   .logo {
     color: var(--primary-black-color);
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-decoration: none;
   }
 
   .web {
     color: var(--button-link-color);
-   ;
   }
 
   /* Style Portfolio */
@@ -94,17 +138,43 @@ li {
   .filter{
     color: var(--primary-text-color);
     background-color: var(--button-second-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
   }
   .filter.active {
     color: var(--primary-white-color);
     background-color: var(--button-link-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
   }
   
   .title-project{
     color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
   }
+
   .filter-project{
     color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+
+  .project-link {
+      text-decoration: none;
   }
 
   /* Footer */
@@ -117,12 +187,6 @@ li {
       /* background-color: var(--bgr-footer); */
     }
 
-    .address {
-      text-decoration: none;
-      border: none;
-    }
-    
-
-    
+ 
     
 /* list-style: none;*/
