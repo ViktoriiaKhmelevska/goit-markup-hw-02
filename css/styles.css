@@ -1,5 +1,4 @@
 :root {
-   /* --primary-text-color: rgba(0, 0, 0, 0.8); title-text-color */
     --primary-text-color: #212121;
     --accent-color: #757575;
     --primary-white-color: #ffffff;
@@ -73,7 +72,6 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   }
 
@@ -81,7 +79,6 @@ li {
   color: var(--accent-color);
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -178,15 +175,14 @@ li {
   }
 
   /* Footer */
-    .footer-position {
+    .footer-position, 
+    .footer-link {
       color: var(--primary-white-color);
       background-color: var(--bgr-footer);
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
     }
     .footer-link {
       color: var(--footer-main-color);
-      /* background-color: var(--bgr-footer); */
     }
-
- 
-    
-/* list-style: none;*/
