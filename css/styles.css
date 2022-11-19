@@ -3,6 +3,7 @@
     --accent-color: #757575;
     --primary-white-color: #ffffff;
     --button-link-color: #2196F3;
+    --button-active: #188CE8;
     --primary-black-color: #000000;
     --button-second-color: #F5F4FA;
     --footer-main-color: rgda(255, 255, 255, 0.6);
@@ -29,6 +30,52 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Site nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--button-link-color);
+  text-decoration: none;
+}
+
+.site-nav .link.current {
+  color: var(--button-link-color);
+  text-decoration: none;
+}
+
+.site-nav-contact {
+  color: var(--accent-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav-contact:hover, 
+.site-nav-contact:focus {
+  color: var(--button-link-color);
+}
+
+.logo {
+  color: var(--primary-black-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.web {
+  color: var(--button-link-color);
+}
+
 /* Style Studio */
 
 li {
@@ -48,6 +95,21 @@ li {
   background-color: var(--bgr-footer);
 }
 
+.button.active {
+  color: var(--primary-white-color);
+  background-color: var(--button-link-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.active:hover,
+.button.active:focus {
+  background-color: var(--button-active);
+}
+
 .title-invisible{
   color: transparent;
 }
@@ -55,6 +117,7 @@ li {
 .title-benefits{
   color: var(--primary-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -62,7 +125,6 @@ li {
   color: var(--accent-color);
   font-size: 14px;
   line-height: 1.71;
-  /* letter-spacing: 0.03em; */
 }
 
 .title-work{
@@ -71,7 +133,6 @@ li {
   font-size: 36px;
   line-height: 1.17x;
   text-align: center;
-  /* letter-spacing: 0.03em; */
 }
 .section-command {
   background: var(--button-second-color)
@@ -82,71 +143,23 @@ li {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  /* letter-spacing: 0.03em; */
 }
 
+.command-li {
+  background-color: #F5F4FA;
+}
 .title-command {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* letter-spacing: 0.03em; */
   }
 
 .filter-command {
   color: var(--accent-color);
   font-size: 16px;
   line-height: 1.19;
-  /* letter-spacing: 0.03em; */
 }
-
-
-/* Site nav */
-.site-nav .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    /* font-size: 14px; */
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-  }
-  
-  .site-nav .link:hover,
-  .site-nav .link:focus {
-    color: var(--button-link-color);
-    text-decoration: none;
-  }
-  
-  .site-nav .link.current {
-    color: var(--button-link-color);
-    text-decoration: none;
-  }
-
-  .site-nav-contact {
-    color: var(--accent-color);
-    font-weight: 500;
-    /* font-size: 14px; */
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-  }
-  .site-nav-contact:hover, 
-  .site-nav-contact:focus {
-    color: var(--button-link-color);
-  }
-
-  .logo {
-    color: var(--primary-black-color);
-    font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.19;
-    /* letter-spacing: 0.03em; */
-    text-decoration: none;
-  }
-
-  .web {
-    color: var(--button-link-color);
-  }
 
   /* Style Portfolio */
 
@@ -157,7 +170,6 @@ li {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    /* letter-spacing: 0.03em; */
     cursor: pointer;
     font-family: inherit;
   }
@@ -168,19 +180,14 @@ li {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    /* letter-spacing: 0.03em; */
     cursor: pointer;
-    font-family: inherit;
   }
   
   .filter:hover,
-  .filter:focus,
-  .filter.active:hover,
-  .filter.active:focus {
-    text-decoration: underline;
+  .filter:focus {
+    background-color: var(--button-link-color);
+    color: var(--primary-white-color);
   }
-
-
 
   .title-project{
     color: var(--primary-text-color);
@@ -195,7 +202,6 @@ li {
     color: var(--accent-color);
     font-size: 16px;
     line-height: 1.88;
-    /* letter-spacing: 0.03em; */
     text-decoration: none;
   }
 
@@ -228,8 +234,10 @@ li {
     .address {
       font-style: normal;
      }
-     .address:hover,
-     .address:focus {
-      text-decoration: underline;
+     .footer-position:hover,
+     .footer-position:focus,
+     .footer-link:hover,
+     .footer-link:focus {
+      color: var(--button-link-color);
      }
      
