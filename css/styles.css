@@ -100,9 +100,10 @@ li {
   background-color: var(--button-link-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.88;
   text-align: center;
   cursor: pointer;
+  font-family: Roboto, sans-serif;
 }
 
 .button.active:hover,
@@ -146,7 +147,7 @@ li {
 }
 
 .command-li {
-  background-color: #F5F4FA;
+  background-color: var(--primary-white-color);
 }
 .title-command {
   color: var(--primary-text-color);
